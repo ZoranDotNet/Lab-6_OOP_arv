@@ -9,6 +9,7 @@
 
 
             //creates objects
+            Animal animal = new();
             Dog dog1 = new();
             Labrador dog2 = new();
             Chihuahua dog3 = new();
@@ -16,6 +17,7 @@
             Lion lion = new();
 
             //add objects to List myAnimal
+            myAnimals.Add(animal);
             myAnimals.Add(dog1);
             myAnimals.Add(dog2);
             myAnimals.Add(dog3);
