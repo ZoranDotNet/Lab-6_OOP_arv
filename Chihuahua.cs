@@ -31,7 +31,7 @@
 
         public override void Print()
         {
-            Console.WriteLine($"{Name}, {Breed}, {Age}, {Color}, {Food}, likes to {LikesToDo}, " +
+            Console.WriteLine($"Name: {Name}, {Breed}, {Age}, {Color}, Eats: {Food}, likes to {LikesToDo}, " +
                 $"Kg: {Weight}, Badhabit: {BadHabit}");
         }
 

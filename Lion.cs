@@ -46,7 +46,7 @@
 
         public override void Print()
         {
-            Console.WriteLine($"{Name}, {Age}, {Color}, {Food}, Kg: {Weight}, Is predator: {IsPredator}");
+            Console.WriteLine($"Name: {Name}, {Age}, {Color}, Eats: {Food}, Kg: {Weight}, Is predator: {IsPredator}");
         }
 
 

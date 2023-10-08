@@ -8,6 +8,8 @@
         protected string Food { get; set; }
         protected int Weight { get; set; }
 
+
+        // Constructor
         public Animal(string name, int age, string color, string food, int weight)
         {
             Name = name;
@@ -17,30 +19,31 @@
             Weight = weight;
         }
 
+        // Constructor
         public Animal()
         {
 
         }
 
-        // METHODS
+        // METHODS - We override them in subclasses
         public virtual void MakeSound()
         {
-            Console.WriteLine();
+
         }
 
         public virtual void Running()
         {
-            Console.WriteLine();
+
         }
 
         public virtual void Eating()
         {
-            Console.WriteLine();
+
         }
 
         public virtual void Print()
         {
-            Console.WriteLine();
+
         }
 
 

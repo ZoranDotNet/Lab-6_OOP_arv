@@ -9,22 +9,21 @@
 
 
             //creates objects
-            Dog dog1 = new();
-            Labrador dog2 = new();
-            Chihuahua dog3 = new();
-            Moose moose = new();
-            Lion lion = new();
+            Dog dog1 = new Dog();
+            Labrador dog2 = new Labrador();
+            Chihuahua dog3 = new Chihuahua();
+            Moose moose = new Moose();
+            Lion lion = new Lion();
 
-            //add objects to List myAnimal
+            //add objects to List myAnimals
             myAnimals.Add(dog1);
             myAnimals.Add(dog2);
             myAnimals.Add(dog3);
             myAnimals.Add(moose);
             myAnimals.Add(lion);
 
-            /* In our loop we call our methods. 
-             - Object animal call the base methods, 
-             - we then see if object is a Dog then we call 2 more methods. 
+            /* In our loop we call our methods from base class. 
+             - we then see if object is a Dog, then we call 2 more methods. 
              - if Dog is Labrador we call one more method 
              - if Dog is Chihuahua we call another method.
              - Moose and Lion has their own methods also.  */
@@ -45,8 +44,9 @@
                     if (x is Labrador dl)
                     {
                         dl.Swimming();
+                        Console.WriteLine();
                     }
-                    if (x is Chihuahua dc)
+                    else if (x is Chihuahua dc)
                     {
                         dc.TakeNap();
                         Console.WriteLine();

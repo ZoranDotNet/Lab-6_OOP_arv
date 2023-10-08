@@ -1,7 +1,7 @@
 ﻿namespace OOP_arv
 {
     class Dog : Animal
-    {   //Properties - set default values to new properties
+    {   //Properties - set default values to our new properties
         protected string LikesToDo { get; set; } = "play";
         protected string Sound { get; set; } = "wow wow";
         protected string PlaceToSleep { get; set; } = "dog house";
@@ -40,7 +40,7 @@
 
         public override void Print()
         {
-            Console.WriteLine($"{Name}, {Age}, {Color}, {Food}, likes to {LikesToDo}, Kg: {Weight}, ");
+            Console.WriteLine($"Name: {Name}, {Age}, {Color}, Eats: {Food}, likes to {LikesToDo}, Kg: {Weight}, ");
         }
 
         public override void Running()

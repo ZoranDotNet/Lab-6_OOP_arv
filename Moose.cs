@@ -42,7 +42,7 @@
         }
         public override void Print()
         {
-            Console.WriteLine($"{Name}, {Age}, {Color}, {Food}, Kg: {Weight}, Have antlers: {Antlers}");
+            Console.WriteLine($"Name: {Name}, {Age}, {Color}, Eats: {Food}, Kg: {Weight}, Have antlers: {Antlers}");
         }
 
 
