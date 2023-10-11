@@ -8,6 +8,7 @@
         public Moose(string name, int age, string color, string food, int weight, bool antlers)
             : base(name, age, color, food, weight)
         {
+
             Antlers = antlers;
         }
 
