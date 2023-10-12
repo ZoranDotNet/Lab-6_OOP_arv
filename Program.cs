@@ -4,72 +4,76 @@
     {
         static void Main(string[] args)
         {
+
             //Make a List of Animal so we can loop thrue all methods
             List<Animal> myAnimals = new List<Animal>();
+
 
 
             //creates objects
             Dog dog1 = new Dog();
             Labrador dog2 = new Labrador();
             Chihuahua dog3 = new Chihuahua();
-            Moose moose = new Moose();
-            Lion lion = new Lion();
+            Moose moose1 = new Moose();
+            Lion lion1 = new Lion();
 
             //add objects to List myAnimals
             myAnimals.Add(dog1);
             myAnimals.Add(dog2);
             myAnimals.Add(dog3);
-            myAnimals.Add(moose);
-            myAnimals.Add(lion);
+            myAnimals.Add(moose1);
+            myAnimals.Add(lion1);
 
-            /* In our loop we call our methods from base class. 
-             - we then see if object is a Dog, then we call 2 more methods. 
-             - if Dog is Labrador we call one more method 
-             - if Dog is Chihuahua we call another method.
-             - Moose and Lion has their own methods also.  */
+            /* In our loop we first call our methods from base class. 
+            - we then see if object is a Dog, then we call 2 more methods. 
+            - if Dog is Labrador we call one more method 
+            - if Dog is Chihuahua we call another method.
+            - Moose and Lion has their own methods also.  */
 
-            foreach (Animal x in myAnimals)
+
+            foreach (Animal animal in myAnimals)
             {
-                x.MakeSound();
-                x.Running();
-                x.Eating();
-                x.Print();
+                animal.MakeSound();
+                animal.Running();
+                animal.Eating();
+                animal.Print();
 
 
-                if (x is Dog d)
+                if (animal is Dog dog)
                 {
-                    d.Sleeping();
-                    d.Jumping();
+                    dog.Sleeping();
+                    dog.Jumping();
 
-                    if (x is Labrador dl)
+                    if (animal is Labrador lab)
                     {
-                        dl.Swimming();
+                        lab.Swimming();
                         Console.WriteLine();
                     }
-                    else if (x is Chihuahua dc)
+                    else if (animal is Chihuahua chi)
                     {
-                        dc.TakeNap();
+                        chi.TakeNap();
                         Console.WriteLine();
                     }
                     else Console.WriteLine();
 
                 }
-                else if (x is Moose m)
+                else if (animal is Moose moose)
                 {
-                    m.LookForShelter();
+                    moose.LookForShelter();
                     Console.WriteLine();
                 }
 
-                else if (x is Lion l)
+                else if (animal is Lion lion)
                 {
-                    l.GetFacts();
+                    lion.GetFacts();
 
                 }
                 else Console.WriteLine();
 
             }
 
-            Console.ReadKey();
+
+            //Console.ReadKey();
         }
     }
 }

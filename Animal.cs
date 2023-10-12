@@ -9,21 +9,6 @@
         protected int Weight { get; set; }
 
 
-        // Constructor
-        public Animal(string name, int age, string color, string food, int weight)
-        {
-            Name = name;
-            Age = age;
-            Color = color;
-            Food = food;
-            Weight = weight;
-        }
-
-        // Constructor
-        public Animal()
-        {
-
-        }
 
         // METHODS - We implement them in subclasses
         public abstract void MakeSound();

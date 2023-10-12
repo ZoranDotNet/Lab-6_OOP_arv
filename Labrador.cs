@@ -4,25 +4,24 @@
     {   //Properties - set default values to the new properties
         protected string Breed { get; set; } = "Labrador";
         protected string SpecialSkill { get; set; } = "Retrieve ducks";
-        protected string Sound2 { get; set; } = "Grrrrrrr";
-
-        //Constructor
-        public Labrador(string name, int age, string color, string food, int weight, string likesToDo, string sound, string placeToSleep, string breed, string specialSkill, string sound2)
-            : base(name, age, color, food, weight, likesToDo, sound, placeToSleep)
-        {
-            Breed = breed;
-            SpecialSkill = specialSkill;
-            Sound2 = sound2;
-        }
 
         //Constructor - set default values
         public Labrador()
         {
-            Name = "Charlie"; Age = 6; Color = "Black"; Food = "treats"; Weight = 30; LikesToDo = "chase the ball"; PlaceToSleep = "blanket";
+            Name = "Charlie"; Age = 6;
+            Color = "Black"; Food = "treats";
+            Weight = 30; LikesToDo = "chase the ball";
+            Sound = "Grrrrrrr"; PlaceToSleep = "blanket";
         }
 
         //METHODS
         //We override Animal and Dog methods and have a new method
+
+        public void SneakPeak()
+        {
+            Console.WriteLine($"This is {Name} and he is a {Breed}");
+        }
+
 
         public void Swimming()
         {
@@ -35,7 +34,7 @@
         }
         public override void MakeSound()
         {
-            Console.WriteLine($"{Breed} says {Sound} & {Sound2}");
+            Console.WriteLine($"{Breed} says {Sound}");
         }
 
         public override void Jumping()

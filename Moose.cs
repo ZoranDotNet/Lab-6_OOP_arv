@@ -4,13 +4,6 @@
     {   //Properties - set default values to the new properties
         protected bool Antlers { get; set; } = true;
 
-        //Constructor
-        public Moose(string name, int age, string color, string food, int weight, bool antlers)
-            : base(name, age, color, food, weight)
-        {
-
-            Antlers = antlers;
-        }
 
         //Constructor - set default values
         public Moose()
@@ -20,6 +13,12 @@
 
         //METHODS
         //Moose have a new method, we override 4 methods from Animal
+
+
+        public void SneakPeak()
+        {
+            Console.WriteLine($"This is {Name} and he is {Age} years old.");
+        }
 
         public void LookForShelter()
         {

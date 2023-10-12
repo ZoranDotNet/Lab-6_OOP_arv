@@ -6,14 +6,6 @@
         protected string Sound { get; set; } = "wow wow";
         protected string PlaceToSleep { get; set; } = "dog house";
 
-        //Constructor - get properties from base class - and 3 new Dog properties
-        public Dog(string name, int age, string color, string food, int weight, string likesToDo, string sound, string placeToSleep)
-            : base(name, age, color, food, weight)
-        {
-            LikesToDo = likesToDo;
-            Sound = sound;
-            PlaceToSleep = placeToSleep;
-        }
 
         // Constructor - set default values
         public Dog()

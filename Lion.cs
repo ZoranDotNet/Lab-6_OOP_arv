@@ -4,12 +4,7 @@
     {   //Properties
         protected bool IsPredator { get; set; }
 
-        //Constructor
-        public Lion(string name, int age, string color, string food, int weight, bool isPredator)
-            : base(name, age, color, food, weight)
-        {
-            IsPredator = isPredator;
-        }
+
 
         //Constructor - set default values
         public Lion()
@@ -19,7 +14,12 @@
         }
 
         //METHODS
-        //Lion have a new method, we override 4 methods from Animal
+
+        public void SneakPeak()
+        {
+            Console.WriteLine($"This is {Name} a {Color} lion that weights {Weight} kg.");
+        }
+
 
         public void GetFacts()
         {
