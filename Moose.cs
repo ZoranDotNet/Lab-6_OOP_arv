@@ -13,13 +13,6 @@
 
         //METHODS
         //Moose have a new method, we override 4 methods from Animal
-
-
-        public void SneakPeak()
-        {
-            Console.WriteLine($"This is {Name} and he is {Age} years old.");
-        }
-
         public void LookForShelter()
         {
             Console.WriteLine("Moose is looking for shelter in the stormy weather.");

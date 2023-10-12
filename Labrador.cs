@@ -17,11 +17,6 @@
         //METHODS
         //We override Animal and Dog methods and have a new method
 
-        public void SneakPeak()
-        {
-            Console.WriteLine($"This is {Name} and he is a {Breed}");
-        }
-
 
         public void Swimming()
         {

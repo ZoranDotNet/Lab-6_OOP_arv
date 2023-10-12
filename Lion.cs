@@ -14,13 +14,6 @@
         }
 
         //METHODS
-
-        public void SneakPeak()
-        {
-            Console.WriteLine($"This is {Name} a {Color} lion that weights {Weight} kg.");
-        }
-
-
         public void GetFacts()
         {
             Console.WriteLine("The lion is a fierce predator and hunts in packs.");
