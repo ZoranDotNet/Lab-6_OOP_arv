@@ -2,11 +2,12 @@
 {
     abstract class Animal
     {   // Properties
-        protected string? Name { get; set; }
-        protected int Age { get; set; }
-        protected string? Color { get; set; }
-        protected string? Food { get; set; }
-        protected int Weight { get; set; }
+        public string? Name { get; set; }
+        public int Age { get; set; }
+        public string? Color { get; set; }
+        public string? Food { get; set; }
+        public int Weight { get; set; }
+        public bool Wild { get; set; }
 
 
 

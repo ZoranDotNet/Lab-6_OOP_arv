@@ -10,7 +10,8 @@
         {
             Name = "Charlie"; Age = 6;
             Color = "Black"; Food = "treats";
-            Weight = 30; LikesToDo = "chase the ball";
+            Weight = 30; Wild = false;
+            LikesToDo = "chase the ball";
             Sound = "Grrrrrrr"; PlaceToSleep = "blanket";
         }
 

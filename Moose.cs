@@ -8,11 +8,11 @@
         //Constructor - set default values
         public Moose()
         {
-            Name = "Helge"; Age = 8; Color = "Dark grey"; Food = "plants"; Weight = 250;
+            Name = "Helge"; Age = 8; Color = "Dark grey"; Food = "plants"; Weight = 250; Wild = true;
         }
 
         //METHODS
-        //Moose have a new method, we override 4 methods from Animal
+        //Moose have a new method, we override methods from Animal
         public void LookForShelter()
         {
             Console.WriteLine("Moose is looking for shelter in the stormy weather.");

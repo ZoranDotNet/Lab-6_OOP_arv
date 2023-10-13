@@ -1,13 +1,12 @@
 ﻿namespace OOP_arv
-{
+{//Zoran Matovic NET23
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            //Make a List of Animal so we can loop thrue all methods
+            //Make a List of Animal so we can loop through all methods
             List<Animal> myAnimals = new List<Animal>();
-
 
 
             //creates objects
@@ -72,8 +71,20 @@
 
             }
 
+            Console.WriteLine("\n------------------------------------");
+            Console.WriteLine("Wild animals making sound:");
 
-            //Console.ReadKey();
+            //separate all wild animals to call MakeSound method
+            var filteredList = myAnimals.Where(x => x.Wild == true).ToList();
+
+            foreach (var item in filteredList)
+            {
+                item.MakeSound();
+            }
+
+
+
+            Console.ReadKey();
         }
     }
 }

@@ -10,7 +10,7 @@
         // Constructor - set default values
         public Dog()
         {
-            Name = "Fido"; Age = 3; Color = "brown/white"; Food = "dog-food"; Weight = 12;
+            Name = "Fido"; Age = 3; Color = "brown/white"; Food = "dog-food"; Weight = 12; Wild = false;
         }
 
         //METHODS

@@ -10,7 +10,7 @@
         public Lion()
 
         {
-            Name = "Akita"; Age = 6; Color = "yellow"; Food = "meat"; Weight = 180; IsPredator = true;
+            Name = "Akita"; Age = 6; Color = "yellow"; Food = "meat"; Weight = 180; Wild = true; IsPredator = true;
         }
 
         //METHODS

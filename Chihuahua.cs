@@ -12,7 +12,8 @@
         {
             Name = "Carlos"; Age = 2;
             Color = "light brown"; Food = "can food";
-            Weight = 2; LikesToDo = "bark at strangers";
+            Weight = 2; Wild = false;
+            LikesToDo = "bark at strangers";
             Sound = "Yap yap yap"; PlaceToSleep = "the couch";
         }
 
