@@ -25,6 +25,11 @@
             Console.WriteLine("Dog is jumping");
         }
 
+        public void SayGoodbye()
+        {
+            Console.WriteLine($"{Name} says goodbye.");
+        }
+
         public override void MakeSound()
         {
             Console.WriteLine($"Dog say {Sound}");

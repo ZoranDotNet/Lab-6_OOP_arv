@@ -1,18 +1,21 @@
-﻿namespace OOP_arv
+﻿using System.Data;
+
+namespace OOP_arv
 {//Zoran Matovic NET23
     internal class Program
     {
         static void Main(string[] args)
         {
 
-            //Make a List of Animal so we can loop through all methods
+            //Make a List of Animal so we can loop and call all methods
             List<Animal> myAnimals = new List<Animal>();
 
 
-            //creates objects
+            //create objects
             Dog dog1 = new Dog();
-            Labrador dog2 = new Labrador();
-            Chihuahua dog3 = new Chihuahua();
+            Chihuahua dog2 = new Chihuahua();
+            Labrador dog3 = new Labrador();
+            Labrador dog4 = new Labrador("Enzo", 3, "brown", "chicken", 35, false, "go on walks", "Grrrrrrr", "blanket");
             Moose moose1 = new Moose();
             Lion lion1 = new Lion();
 
@@ -20,6 +23,7 @@
             myAnimals.Add(dog1);
             myAnimals.Add(dog2);
             myAnimals.Add(dog3);
+            myAnimals.Add(dog4);
             myAnimals.Add(moose1);
             myAnimals.Add(lion1);
 
@@ -82,9 +86,22 @@
                 item.MakeSound();
             }
 
+            Console.WriteLine("\n------------------------------------");
+
+            Console.WriteLine("The dogs want to say goodbye before you leave.");
+            Console.WriteLine("Press enter...");
+            Console.ReadLine();
+            // filter out all dogs and put them in a new list
+            List<Dog> dogList = myAnimals.OfType<Dog>().ToList();
+
+            //Loop our new doglist and call method
+            foreach (var item in dogList)
+            {
+                item.SayGoodbye();
+            }
 
 
-            Console.ReadKey();
+
         }
     }
 }
